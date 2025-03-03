@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <!-- 캔버스가 슬라이드 밖에 있으면 계속 배경에 있는 3d -->
+  <canvas id="threeCanvas1"></canvas>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide index0">
+        <!-- 캔버스가 슬라이드 안에 있으면 슬라이드 마다 끊어지는 3d -->
+        <!-- <canvas id="threeCanvas1"></canvas> -->
+        <p>Slide 1</p>
+      </div>
+      <div class="swiper-slide index1">Slide 2</div>
+      <div class="swiper-slide index2">Slide 3</div>
+      <div class="swiper-slide index3">Slide 4</div>
+      <div class="swiper-slide index4">Slide 5</div>
+      <div class="swiper-slide index5">Slide 6</div>
+    </div>
+    
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js.js" type="module"></script>
+</body>
+</html>

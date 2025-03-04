@@ -9,6 +9,11 @@
 </head>
 
 <body>
+  <div class="video-container">
+    <video autoplay muted loop>
+      <source src="space.mp4" type="video/mp4">
+    </video>
+  </div>
   <!-- 캔버스가 슬라이드 밖에 있으면 계속 배경에 있는 3d -->
   <canvas id="threeCanvas1"></canvas>
   <!-- Slider main container -->
@@ -19,9 +24,19 @@
       <div class="swiper-slide index0">
         <!-- 캔버스가 슬라이드 안에 있으면 슬라이드 마다 끊어지는 3d -->
         <!-- <canvas id="threeCanvas1"></canvas> -->
-        <p>Slide 1</p>
+        <div class="txtBox">
+          <p class="title">Starwars</p>
+          <p class="detail">A Long Time ago in a Galaxy far, Far Away...
+          </p>
+        </div>
       </div>
-      <div class="swiper-slide index1">Slide 2</div>
+      <div class="swiper-slide index1">
+        <div class="txtBox">
+          <p class="title">Since 1984...</p>
+          <p class="detail">They must often change
+          </p>
+        </div>
+      </div>
       <div class="swiper-slide index2">Slide 3</div>
       <div class="swiper-slide index3">Slide 4</div>
       <div class="swiper-slide index4">Slide 5</div>

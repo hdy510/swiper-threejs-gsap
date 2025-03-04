@@ -1,5 +1,7 @@
 /* 언어설정 */
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 
 /* 전체설정 */
 * {
@@ -22,6 +24,23 @@ body {
   width: 100%;
   height: 100vh;
   color: #fff;
+  background-color: #000;
+  font-family: "Michroma", sans-serif;
+}
+
+// video-container 설정
+.video-container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /* swiper 설정 */
@@ -40,33 +59,37 @@ body {
   align-items: center;
   font-size: 100px;
   font-weight: bold;
-  &.index0 {
-    // background-color: rgb(255, 210, 210);
-    position: relative;
-    p {
-      font-size: 100px;
+  position: relative;
+  .txtBox {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .title {
+      font-size: 60px;
       font-weight: bold;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+    }
+    .detail {
+      font-size: 20px;
+      font-weight: bold;
     }
   }
-  // &.index1 {
-  //   background-color: rgb(252, 255, 210);
-  // }
-  // &.index2 {
-  //   background-color: rgb(221, 255, 210);
-  // }
-  // &.index3 {
-  //   background-color: rgb(210, 255, 252);
-  // }
-  // &.index4 {
-  //   background-color: rgb(210, 221, 255);
-  // }
-  // &.index5 {
-  //   background-color: rgb(234, 210, 255);
-  // }
+  &.index0 {
+    .txtBox {
+      top: 50%;
+      right: 2%;
+    }
+  }
+  &.index1 {
+    .txtBox {
+      bottom: 9%;
+      left: 36%;
+    }
+  }
+ 
+
 }
 
 // 캔버스 설정

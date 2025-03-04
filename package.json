@@ -1,6 +1,25 @@
 {
   "dependencies": {
     "gsap": "^3.12.7",
+    "swiper": "^11.2.5",
     "three": "^0.174.0"
-  }
+  },
+  "name": "250303-3d-swiper",
+  "version": "1.0.0",
+  "main": "js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdy510/swiper-threejs-gsap.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hdy510/swiper-threejs-gsap/issues"
+  },
+  "homepage": "https://github.com/hdy510/swiper-threejs-gsap#readme",
+  "description": ""
 }
